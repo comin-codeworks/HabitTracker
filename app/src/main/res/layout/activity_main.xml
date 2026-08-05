@@ -35,106 +35,6 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/progressCard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/progressTitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/progressText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-
-                        <ProgressBar
-                            android:id="@+id/weeklyProgress"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/habitsRecylclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/habitsTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/levelCard"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ProgressBar
-                            android:id="@+id/xpProgress"
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-
-                        <TextView
-                            android:id="@+id/levelText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/xpText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
                     android:id="@+id/avatarCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -148,21 +48,98 @@
                             android:id="@+id/greetingText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="greetingText" />
+                            android:text="Hay Hay Hay!" />
 
                         <TextView
                             android:id="@+id/userName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="userName" />
+                            android:text="Sabine" />
 
                         <ImageView
                             android:id="@+id/avatarImage"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/ic_launcher"
                             tools:srcCompat="@tools:sample/avatars" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/levelCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/levelText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Level 3" />
+
+                        <ProgressBar
+                            android:id="@+id/xpProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/xpText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="120 / 300 XP" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/progressCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/progressTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weekly Progress" />
+
+                        <ProgressBar
+                            android:id="@+id/weeklyProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/progressText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5 / 7 days active" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/habitsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Habits!" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/habitsRecylclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
