@@ -38,6 +38,9 @@ public class HabitAdapter extends RecyclerView.Adapter<HabitAdapter.HabitViewHol
 
         holder.habitName.setText(habit.getName());
         holder.habitCheckBox.setChecked(habit.isCompleted());
+        holder.habitCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            habit.setCompleted(isChecked);
+        });
     }
 
     @Override
